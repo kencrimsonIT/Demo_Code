@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demo Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <h1>ID Form</h1>
+            <!-- Form input -->
+            <form id="idForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Nhập tên sinh viên">
+                    <div class="error" id="nameError">Vui lòng nhập đúng tên của sinh viên</div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="id" placeholder="Nhập mã số sinh viên">
+                    <div class="error" id="idError">Vui lòng nhập đúng MSSV</div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="class" placeholder="Nhập tên lớp của sinh viên">
+                    <div class="error" id="classError">Vui lòng nhập đúng tên lớp của sinh viên</div>
+                </div>
+
+                <button type="submit" id="submitBtn">Nhập</button>
+            </form>
+
+            <!-- Result output -->
+            <div id="result-container">
+                <div class="result-title">Result</div>
+                <div class="result-frame" id="result-box">
+                    <div class="result-item">
+                        <span class="result-label">Tên:</span>
+                        <span id="resultName"></span>
+                    </div>
+    
+                    <div class="result-item">
+                        <span class="result-label">MSSV:</span>
+                        <span id="resultID"></span>
+                    </div>
+    
+                    <div class="result-item">
+                        <span class="result-label">Lớp:</span>
+                        <span id="resultClass"></span>
+                    </div>
+                </div>
+                <button type="button" id="photoBtn" class="btn-photo">Chụp</button>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+        <script src="logic.js"></script>
+    </body>
+</html>
