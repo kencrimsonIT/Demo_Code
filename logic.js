@@ -12,11 +12,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const studentName = document.getElementById('name').value.trim();
         const studentID = document.getElementById('id').value.trim();
         const className = document.getElementById('class').value.trim();
+        const majorName = document.getElementById('major').value.trim();
+        const studentCourse = document.getElementById('course').value.trim();
         
         // Display results
         document.getElementById('resultName').textContent = studentName;
         document.getElementById('resultID').textContent = studentID;
         document.getElementById('resultClass').textContent = className;
+        document.getElementById('resultMajor').textContent = majorName;
+        document.getElementById('resultCourse').textContent = studentCourse;
     });
 
     //Screen capturing button event

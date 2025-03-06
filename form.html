@@ -26,6 +26,16 @@
                     <div class="error" id="classError">Vui lòng nhập đúng tên lớp của sinh viên</div>
                 </div>
 
+                <div class="form-group">
+                    <input type="text" id="major" placeholder="Nhập tên ngành của sinh viên">
+                    <div class="error" id="majorError">Vui lòng nhập đúng tên ngành của sinh viên</div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="course" placeholder="Nhập niên khóa của sinh viên">
+                    <div class="error" id="courseError">Vui lòng nhập đúng niên khóa của sinh viên</div>
+                </div>
+
                 <button type="submit" id="submitBtn">Nhập</button>
             </form>
 
@@ -46,6 +56,16 @@
                     <div class="result-item">
                         <span class="result-label">Lớp:</span>
                         <span id="resultClass"></span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Ngành:</span>
+                        <span id="resultMajor"></span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Niên khóa:</span>
+                        <span id="resultCourse"></span>
                     </div>
                 </div>
                 <button type="button" id="photoBtn" class="btn-photo">Chụp</button>
