@@ -33,13 +33,22 @@ h1 {
     margin-bottom: 20px;
 }
 
-input {
+input, select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
     transition: border-color 0.3s;
+}
+
+select {
+    background-color: white;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: lightgray;
 }
 
 button {
@@ -64,20 +73,20 @@ button {
     background-color: #0000FF;
 }
 
-.btn-photo {
-    background-color: #FF9933;
-    margin-top: 10px;
-}
-
-.btn-photo:hover {
-    background-color: #FF8000;
-}
-
 .error {
     color: #E74C3C;
     font-size: 14px;
     margin-top: 5px;
     display: none;
+}
+
+.result-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
 }
 
 #result-container {
@@ -110,4 +119,22 @@ button {
 
 .result-value {
     color: #333;
+}
+
+.btn-photo {
+    background-color: #FF9933;
+    margin-top: 10px;
+}
+
+.btn-photo:hover {
+    background-color: #FF8000;
+}
+
+.btn-return {
+    margin-top: 10px;
+    background-color: #0066FF;
+}
+
+.btn-return:hover {
+    background-color: #0000FF;
 }
